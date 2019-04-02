@@ -8,3 +8,14 @@ AliExpressSpider.BestSelling.get().then(
     console.log(error);
   }
 );
+
+AliExpressSpider.Detail()
+  .get()
+  .then(
+    product => {
+      console.log(product);
+    },
+    function(error) {
+      console.log(error);
+    }
+  );
